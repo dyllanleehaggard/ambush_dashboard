@@ -456,13 +456,13 @@ if page == "Dashboard Home":
     total_sv = gk['Sv'].sum()
     sv_pct = round((total_sv / total_sa) * 100, 1) if total_sa > 0 else 0
 
-    c1, c2, c3, c4, c5, c6 = st.columns(6)
-    c1.metric("RECORD", "7-3-3")
+    c1, c2, c3, c4, c5 = st.columns(5)
+    c1.metric("RECORD", "11-5-3")
     c2.metric("GOALS SCORED", total_goals)
-    c3.metric("POSITION", "#4")
+    c3.metric("POSITION", "#2")
     c4.metric("GK SAVE %", f"{sv_pct}%")
     c5.metric("GAMES TRACKED", games_in_hudl)
-    c6.metric("TOTAL ASSISTS", total_assists)
+    c
 
     st.markdown("---")
 
