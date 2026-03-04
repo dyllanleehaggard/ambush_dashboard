@@ -462,7 +462,6 @@ if page == "Dashboard Home":
     c3.metric("POSITION", "#2")
     c4.metric("GK SAVE %", f"{sv_pct}%")
     c5.metric("GAMES TRACKED", games_in_hudl)
-    c
 
     st.markdown("---")
 
