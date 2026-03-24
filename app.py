@@ -457,9 +457,9 @@ if page == "Dashboard Home":
     sv_pct = round((total_sv / total_sa) * 100, 1) if total_sa > 0 else 0
 
     c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("RECORD", "11-5-3")
+    c1.metric("RECORD", "12-5-5")
     c2.metric("GOALS SCORED", total_goals)
-    c3.metric("POSITION", "#2")
+    c3.metric("POSITION", "#5")
     c4.metric("GK SAVE %", f"{sv_pct}%")
     c5.metric("GAMES TRACKED", games_in_hudl)
 
